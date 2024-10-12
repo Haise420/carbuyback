@@ -1,17 +1,93 @@
+{% load static %}
 <html lang="en" class="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otkup Automobila Novi Sad</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" class="css">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favico.ico' %}">
 </head>
 <body>
 
     <header>
+        <div class="nav">
+            <img src="{% static 'images/logo.png' %}" alt="" class="nav-logo">
+
+            <div class="nav-link">
+                <a href="">Pocetna</a>
+            </div>
+            <div class="nav-link">
+                <a href="">Usluge</a>
+            </div>
+            <div class="nav-link">
+                <a href="">Novosti</a>
+            </div>
+            <div class="nav-link">
+                <a href="">Kontakt</a>
+            </div>
+            <div class="nav-link">
+                <a href="">Pozovi</a>
+                <img src="{% static 'images/call-icon.png' %}" alt="">
+            </div>
+        </div>
+
 
     </header>
 
     <main>
-        
+        <hero>
+            <section class="hero-introduction">
+                <h1>OTKUP AUTOMOBILA NOVI SAD</h1>
+
+                <p>
+                    <b>Otkup automobila Novi Sad</b> – Brzo i jednostavno, uz momentalnu isplatu keša!
+                     Ako smatrate da vam se ulaganje u vozilo ne isplati ili nemate dovoljno novca za popravke,
+                      nemojte da brinete! Kontaktirajte nas!
+                </p>
+
+                <img src="{% static 'images/hero-car.png' %}" alt="" class="hero-img">
+
+            </section>
+
+            <section class="hero-contact">
+                <div class="contact">
+                    <h2>Kontaktirajte nas</h2>
+
+
+
+                    <div class="contact-inputs">
+                        <div class="contact-name">
+                            <img src="{% static 'images/contact-name.png' %}" alt="" class="contact-icon">
+                            <input placeholder="Vaše ime" type="text">
+                        </div>
+                        
+                        <div class="contact-email">
+                            <img src="{% static 'images/contact-mail.png' %}" alt="" class="contact-icon">
+                            <input placeholder="Vaš email" type="text">
+                        </div>
+    
+                        <div class="contact-car">
+                            <img src="{% static 'images/contact-car.png' %}" alt="" class="contact-icon">
+                            <input placeholder="Marka automobila" type="text">
+                        </div>
+    
+                        <div class="contact-question">
+                            <textarea placeholder="Upit" type="text"></textarea>
+                        </div>
+                    </div>
+   
+                    
+                    
+                    
+
+                    <div class="contact-button">
+                        <button>POŠALJI</button>
+                    </div>
+                    
+                </div>
+            </section>
+
+        </hero>
     </main>
 
     <footer>
