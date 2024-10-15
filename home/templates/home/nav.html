@@ -1,0 +1,25 @@
+{% load static %}
+{% block content %}
+
+<div class="nav">
+    <img src="{% static 'images/logo.png' %}" alt="" class="nav-logo">
+
+    <div class="nav-link">
+        <a href="{% url 'home' %}">Pocetna</a>
+    </div>
+    <div class="nav-link">
+        <a href="{% url 'usluge' %}">Usluge</a>
+    </div>
+    <div class="nav-link">
+        <a href="{% url 'novosti' %}">Novosti</a>
+    </div>
+    <div class="nav-link">
+        <a href="{% url 'kontakt' %}">Kontakt</a>
+    </div>
+    <div class="nav-link">
+        <a href="">Pozovi</a>
+        <img src="{% static 'images/call-icon.png' %}" alt="">
+    </div>
+</div>
+
+{% endblock content %}

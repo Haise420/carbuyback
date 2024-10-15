@@ -10,33 +10,22 @@
 <body>
 
     <header>
-        <div class="nav">
-            <img src="{% static 'images/logo.png' %}" alt="" class="nav-logo">
 
-            <div class="nav-link">
-                <a href="">Pocetna</a>
-            </div>
-            <div class="nav-link">
-                <a href="">Usluge</a>
-            </div>
-            <div class="nav-link">
-                <a href="">Novosti</a>
-            </div>
-            <div class="nav-link">
-                <a href="">Kontakt</a>
-            </div>
-            <div class="nav-link">
-                <a href="">Pozovi</a>
-                <img src="{% static 'images/call-icon.png' %}" alt="">
-            </div>
-        </div>
+        {% include 'home/nav.html' %}
+
+  
 
 
     </header>
 
     <main>
         <hero>
-            <section class="hero-introduction">
+
+            <!-- <img src="{% static 'images/bg.jpg' %}" alt=""> -->
+
+
+
+            <!-- <section class="hero-introduction">
                 <h1>OTKUP AUTOMOBILA NOVI SAD</h1>
 
                 <p>
@@ -85,7 +74,7 @@
                     </div>
                     
                 </div>
-            </section>
+            </section> -->
 
         </hero>
     </main>
