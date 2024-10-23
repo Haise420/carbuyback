@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otkup Automobila Novi Sad</title>
     <link rel="stylesheet" href="{% static 'css/index.css' %}" class="css">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" class="css">
     <link rel="icon" type="image/x-icon" href="{% static 'images/favico.ico' %}">
 </head>
 <body>
@@ -20,68 +21,191 @@
 
     <main>
         <hero>
-
-            <!-- <img src="{% static 'images/bg.jpg' %}" alt=""> -->
-
-
-
-            <!-- <section class="hero-introduction">
-                <h1>OTKUP AUTOMOBILA NOVI SAD</h1>
-
-                <p>
-                    <b>Otkup automobila Novi Sad</b> – Brzo i jednostavno, uz momentalnu isplatu keša!
-                     Ako smatrate da vam se ulaganje u vozilo ne isplati ili nemate dovoljno novca za popravke,
-                      nemojte da brinete! Kontaktirajte nas!
-                </p>
-
-                <img src="{% static 'images/hero-car.png' %}" alt="" class="hero-img">
-
+            <section class="hero-introduction">
+                <h1>OTKUP AUTOMOBILA <br> NOVI SAD</h1>
+                
             </section>
-
-            <section class="hero-contact">
-                <div class="contact">
-                    <h2>Kontaktirajte nas</h2>
-
-
-
-                    <div class="contact-inputs">
-                        <div class="contact-name">
-                            <img src="{% static 'images/contact-name.png' %}" alt="" class="contact-icon">
-                            <input placeholder="Vaše ime" type="text">
-                        </div>
-                        
-                        <div class="contact-email">
-                            <img src="{% static 'images/contact-mail.png' %}" alt="" class="contact-icon">
-                            <input placeholder="Vaš email" type="text">
-                        </div>
-    
-                        <div class="contact-car">
-                            <img src="{% static 'images/contact-car.png' %}" alt="" class="contact-icon">
-                            <input placeholder="Marka automobila" type="text">
-                        </div>
-    
-                        <div class="contact-question">
-                            <textarea placeholder="Upit" type="text"></textarea>
-                        </div>
-                    </div>
-   
-                    
-                    
-                    
-
-                    <div class="contact-button">
-                        <button>POŠALJI</button>
-                    </div>
-                    
-                </div>
-            </section> -->
-
+      
         </hero>
     </main>
 
-    <footer>
 
-    </footer>
+    <div class="section">
+        <h2>Maksimalno brza realizacija u samo 4 koraka</h2>
+
+        <div class="section-grid">
+            <div class="bar">
+                <div class="bar-red"></div>
+            </div>
+
+            <span class="bar-number-1">
+                <div class="bar-sign" id="bar-number-1">
+                    <span>
+                        <p class="bar-sign-number">1</p>
+                        <p class="bar-sign-text">Kontakt</p>
+                    </span>
+
+                    <p>Pozovite nas ili posetite našu kontakt stranicu i popunite formular sa osnovnim informacijama koje su nam neophodne za otkup.</p>
+
+                </div>
+                <div class="bar-up"></div>
+            </span>
+            <span class="bar-number-2">
+                <div class="bar-down-2"></div>
+                <div class="bar-sign" id="bar-number-2">
+                    <span>
+                        <p class="bar-sign-number">2</p>
+                        <p class="bar-sign-text">Procena</p>
+                    </span>
+
+                    <p>Neposredno po Vašem kontaktu, dolazimo na lice mesta i vršimo procenu vrednosti vozila koja je potpuno besplatna.</p>
+
+                </div>
+            </span>
+            <span class="bar-number-3">
+                <div class="bar-sign" id="bar-number-3">
+                    <span>
+                        <p class="bar-sign-number">3</p>
+                        <p class="bar-sign-text">Isplata</p>
+                    </span>
+                    
+                    <p>Još jedna prednost koju Vam nudimo prilikom otkupa vozila jeste maksimalna isplata novca odmah u kešu.</p>
+
+                </div>
+                <div class="bar-up"></div>
+            </span>
+            <span class="bar-number-4">
+                <div class="bar-down-4"></div>
+                <div class="bar-sign" id="bar-number-4">
+                    <span>
+                        <p class="bar-sign-number">4</p>
+                        <p class="bar-sign-text">Papirologija</p>
+                    </span>
+
+                    <p>Papirologija, prenos vlasništva automobila je naša briga. Mi završavamo sve u dogovoru sa vama oko prenosa vlasništva i registracije.</p>
+                </div>
+            </span>
+            
+            
+            
+            
+        </div>
+    </div>
+
+
+
+    <div class="section">
+        <h2>Vršimo otkup vozila svih vrsta</h2>
+
+        <div class="section-wrapper">
+            <div class="card">
+                <img src="{% static 'images/car-transparent.png' %}" alt="">
+                
+                <div class="card-text">
+                    <p>Otkup polovnih automobila</p>
+                </div>
+
+                <div class="card-description">
+                    <p>Bavimo se otkupom automobila svih tipova i vrsta: novijih, starijih, ispravnih, neispravnih i havarisanih. Samo treba da nas pozovete!</p>
+                </div>
+
+                <button>Procitaj više</button>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'images/car-transparent.png' %}" alt="">
+                
+                <div class="card-text">
+                    <p>Otkup starih automobila</p>
+                </div>
+
+                <div class="card-description">
+                    <p>Hocete da prodate Vas stari automobil, a nemate vremena za kupce i prodaju? Na pravom ste mestu.</p>
+                </div>
+
+                <button>Procitaj više</button>
+            </div>
+
+            <div class="card">
+                <img src="{% static 'images/car-transparent.png' %}" alt="">
+                
+                <div class="card-text">
+                    <p>Otkup havarisanih automobila</p>
+                </div>
+
+                <div class="card-description">
+                    <p>Imate havarisano vozilo, ne ocajavajte, mozete samo da zaradite i budete na korak blize kupovini novog vozila!</p>
+                </div>
+
+                <button>Procitaj više</button>
+            </div>
+        </div>
+    </div>
+
+   
+
+    {% include 'home/footer.html' %}
     
+
+    <script>
+        
+        const barSign1 = document.getElementById('bar-number-1');
+
+        // Dodajemo event listener za hover
+        barSign1.addEventListener('mouseenter', function() {
+            barRed.style.width = '325px';  // Promena širine na 500px kada je miš na bar-sign
+        });
+
+        barSign1.addEventListener('mouseleave', function() {
+            barRed.style.width = '0px';  // Promena širine na 500px kada je miš na bar-sign
+        });
+    </script>
+
+    <script>
+
+        const barSign2 = document.getElementById('bar-number-2');
+        const barRed = document.querySelector('.bar-red');
+
+
+        barSign2.addEventListener('mouseenter', function() {
+            barRed.style.width = '625px';  // Promena širine na 500px kada je miš na bar-sign
+        });
+
+        // Vraćamo širinu na 0px kada se miš skine sa bar-sign
+        barSign2.addEventListener('mouseleave', function() {
+            barRed.style.width = '0px';  // Vraćanje na 0px kada miš nije na bar-sign
+        });
+    </script>
+
+
+    <script>
+            
+        const barSign3 = document.getElementById('bar-number-3');
+
+        // Dodajemo event listener za hover
+        barSign3.addEventListener('mouseenter', function() {
+            barRed.style.width = '925px';  // Promena širine na 500px kada je miš na bar-sign
+        });
+
+        barSign3.addEventListener('mouseleave', function() {
+            barRed.style.width = '0px';  // Promena širine na 500px kada je miš na bar-sign
+        });
+    </script>
+
+<script>
+            
+    const barSign4 = document.getElementById('bar-number-4');
+
+    // Dodajemo event listener za hover
+    barSign4.addEventListener('mouseenter', function() {
+        barRed.style.width = '1500px';  // Promena širine na 500px kada je miš na bar-sign
+    });
+
+    barSign4.addEventListener('mouseleave', function() {
+        barRed.style.width = '0px';  // Promena širine na 500px kada je miš na bar-sign
+    });
+</script>
+
+
 </body>
 </html>

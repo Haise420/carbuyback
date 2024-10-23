@@ -1,22 +1,49 @@
 {% load static %}
 {% block content %}
 
-<div class="nav">
-    <img src="{% static 'images/logo.png' %}" alt="" class="nav-logo">
+<div class="top-bar">
+    <div class="top-bar-wrapper">
+        <span>
+            <img class="top-bar-icon" src="{% static 'images/call-icon.png' %}" alt="">
+            <p>060/412-00-24</p>
+        </span>
+        
+        <span>
+            <img class="top-bar-icon" src="{% static 'images/contact-mail.png' %}" alt="">
+            <p>mbotkupautomobila@gmail.com</p>
+        </span>
+       
+        <span>
+            <img class="top-bar-icon" src="{% static 'images/clock-icon.png' %}" alt="">
+            <p>24 / 7</p>
+        </span>
+        
+    </div>
 
+   
+
+
+
+</div>
+
+<div class="nav">
+    <a href="">
+        <img src="{% static 'images/logo.png' %}" alt="" class="nav-logo">
+    </a>
+   
     <div class="nav-link">
-        <a href="{% url 'home' %}">Pocetna</a>
+        <a class="nav-link-animated nav-link-ltr" href="{% url 'home' %}">Pocetna</a>
     </div>
     <div class="nav-link">
-        <a href="{% url 'usluge' %}">Usluge</a>
+        <a class="nav-link-animated nav-link-ltr" href="{% url 'usluge' %}">Usluge</a>
     </div>
     <div class="nav-link">
-        <a href="{% url 'novosti' %}">Novosti</a>
+        <a class="nav-link-animated nav-link-ltr" href="{% url 'novosti' %}">Novosti</a>
     </div>
     <div class="nav-link">
-        <a href="{% url 'kontakt' %}">Kontakt</a>
+        <a class="nav-link-animated nav-link-ltr" href="{% url 'kontakt' %}">Kontakt</a>
     </div>
-    <div class="nav-link">
+    <div class="nav-link pozovi">
         <a href="">Pozovi</a>
         <img src="{% static 'images/call-icon.png' %}" alt="">
     </div>
